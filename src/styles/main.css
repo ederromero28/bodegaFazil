@@ -1,0 +1,331 @@
+﻿.c-header {
+    background-color: #1cbb8c;
+
+}
+
+.c-header>a {
+    color: #fff;
+}
+
+
+
+.carousel-inner>.carousel-item>img {
+    /*object-fit: scale-down;*/
+    height: 40vh;
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .carousel-inner>.carousel-item>img {
+        height: 60vh;
+        width: 100%;
+    }
+}
+
+@media (min-width: 990px) {
+    .carousel-inner>.carousel-item>img {
+        height: 80vh;
+        width: 100%;
+    }
+}
+
+
+.carousel-control-prev i {
+    background-color: #1cbb8c;
+    border-radius: 100%;
+    padding: 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-right: 250px;
+}
+.carousel-control-next i {
+    background-color: #1cbb8c;
+    border-radius: 100%;
+    padding: 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-left: 250px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #1cbb8c;
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+}
+
+
+.categoria {
+    text-decoration: none;
+    color: #000;
+    transition: color 300ms;
+    margin: 0 10px;
+    display: inline-block;
+
+
+}
+
+.categoria:hover {
+    color: #1cbb8c;
+}
+
+.categoria__inner {}
+
+.categoria__imagen {
+    background-color: #f3f6fa;
+    border-radius: 100%;
+}
+
+.categoria__title {}
+
+.productos {
+    /*display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 16px;*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+
+.producto {
+    background-color: #fff;
+    padding: 16px;
+    box-shadow: 0px 0px 2px rgba(174, 181, 189, .9);
+    border-radius: 8px;
+    max-width: 250px;
+    position: relative;
+}
+
+.producto__image {
+    height: 180px;
+}
+
+.producto__image>img {
+    height: 100%;
+}
+
+.producto__price {
+    font-weight: bold;
+}
+
+.producto__title {
+    font-size: 16px;
+}
+
+.producto__agregar {
+    /*position: absolute;
+    bottom: 56px;
+    right: 16px;*/
+    background-color: #1cbb8c;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    transition: background-color 300ms;
+
+}
+
+.producto__agregar:hover {
+    background-color: #1bd59e;
+}
+
+.producto__agregar>i {
+    font-size: 16px;
+    color: #fff;
+}
+
+
+
+/*Seccion Footer*/
+
+.c-footer {
+    background-color: #1cbb8c;
+    color: #fff;
+}
+
+
+.footer {
+    /* background-color: #7857fe; */
+    background-color: #1cbb8c;
+    padding: 50px 0 0;
+}
+
+.footer-col h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 25px;
+    text-transform: capitalize;
+}
+
+.footer-col p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 300;
+    line-height: 26px;
+    margin: 0;
+}
+
+.footer-col ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: white;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 300;
+    display: block;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+    padding-left: 5px;
+}
+
+.footer-col ul li i {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.footer-col ul li span {
+    font-size: 16px;
+    /* line-height: 24px; */
+}
+
+.footer .copyright-text {
+    text-align: center;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 300;
+}
+
+
+/*Login*/
+
+
+.containerLogin {
+    box-shadow: 0 5px 10px #53B175;
+}
+
+.bg {
+    /* background-image: url(/images/bannerLogin.jpg); */
+    background-position: center;
+}
+
+.button1 {
+    background: #53B175;
+}
+
+.button1 button {
+    color: #fff;
+}
+
+.button1 button:hover {
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 768px) {
+    .formularioLogin {
+        width: 75% !important;
+    }
+    .carousel-control-prev i {
+        margin-right: 120px;
+    }
+    .carousel-control-next i {
+        margin-left: 120px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .formularioLogin {
+        width: 100% !important;
+    }
+    .carousel-control-prev i {
+        margin-right: 0px;
+    }
+    .carousel-control-next i {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .formularioLogin {
+        width: 100% !important;
+    }
+    .carousel-control-prev i {
+        margin-right: 0px;
+    }
+    .carousel-control-next i {
+        margin-left: 0px;
+    }
+}
+
+.valido {
+    color: #198754;
+}
+
+.error {
+    color: #dc3545;
+}
+
+.btn-cart {
+    background: #1cbb8c;
+    color: #fff;
+    transition: background 300ms;
+}
+
+.btn-cart:hover {
+    color: #fff;
+    background: #0ec58f;
+}
+
+.precio {
+    color: #1cbb8c;
+}
+
+.cart-wrapper {
+    position: relative;
+}
+
+.cart-wrapper__background {
+    background: rgba(255, 255, 255, .7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.cart-wrapper__title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.cart-wrapper__loader {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 60%);
+    z-index: 2;
+}
