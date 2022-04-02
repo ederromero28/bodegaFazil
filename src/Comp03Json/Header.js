@@ -7,6 +7,7 @@ const Header = () => {
             <header class="c-header">
                 <nav class="navbar navbar-expand-lg navbar-dark">
                     <div class="container">
+                        {/* Aqui aplicamos router-dom para regresar al inicio - click en el logo*/}
                         <Link to={"/"} class="navbar-brand">
                             <img src="/images/logo.png" alt="Logo" class="img-fluid me-2" width="50" />
                             BodegaFazil
@@ -18,9 +19,11 @@ const Header = () => {
                             <partial name="_LoginPartial" />
                             <ul class="navbar-nav  mb-2 mb-lg-0 flex-grow-1">
                                 <li class="nav-item">
+                                    {/* Aqui aplicamos router-dom para regresar al inicio */}
                                     <Link to={"/"} class="nav-link">Inicio</Link>
                                 </li>
                                 <li class="nav-item">
+                                    {/* Aqui aplicamos router-dom ir a catologo de productos */}
                                     <Link to={"/productos"} class="nav-link">Catalogo</Link>
                                 </li>
                                 <li>

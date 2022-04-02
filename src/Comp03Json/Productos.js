@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import productos from '../Data/Products';
+import  productos  from '../Data/Products';
 
 const Productos = () => {
     return (
@@ -12,13 +12,14 @@ const Productos = () => {
                         <span className='text-center mb-5'>Te ofrecemos lo mas selecto de nuestros productos cercanos a tu hogar</span>
                         <div className="col-lg-12 col-md-12 article">
                             <div className="shopcontainer row">
+                                {/* con el .map obtenemos la data del Json de productos. */}
                                 {productos.map((product) => (
                                     <div
                                         className="shop col-lg-4 col-md-6 col-sm-6"
                                         key={product.idproducto}
                                     >
                                         <div className="border-product">
-                                            <Link to={`/producto/${product.idproducto}`}>
+                                            <Link to={`/productodetalle/${product.idproducto}`}>
                                                 <div className="shopBack">
                                                     <img src={product.imagen} alt={product.nombreprod} />
                                                 </div>
@@ -26,7 +27,7 @@ const Productos = () => {
 
                                             <div className="shoptext">
                                                 <p>
-                                                    <Link to={`/producto/${product.idproducto}`}>
+                                                    <Link to={`/productodetalle/${product.idproducto}`}>
                                                         {product.nombreprod}
                                                     </Link>
                                                 </p>
